@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply m-auto px-4 w-full md:max-w-3xl lg:max-w-4xl xl:max-w-5xl bg-gray-200;
+}
