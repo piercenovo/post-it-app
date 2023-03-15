@@ -2,7 +2,7 @@ import './globals.css'
 import { Poppins as poppins } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import React from 'react'
-import { QueryWrapper } from './queryWrapper'
+import { QueryWrapper } from './QueryWrapper'
 
 export const font = poppins({
   subsets: ['latin'],
