@@ -33,7 +33,7 @@ export default function AddPost () {
             text-sm
             bg-sky-600
             text-white
-            px-4 lg:px-5 py-3
+            px-4 lg:px-5 py-2
             rounded-md
             disabled:opacity-25
             hover:bg-sky-700
