@@ -5,6 +5,7 @@ import prismadb from '@/lib/prismadb'
 
 export const authOptions = {
   adapter: PrismaAdapter(prismadb),
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID || '',
