@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 body {
-  @apply m-auto px-8 lg:px-4 w-full md:max-w-3xl lg:max-w-4xl bg-gray-200;
+  @apply m-auto px-6 lg:px-4 w-full md:max-w-3xl lg:max-w-4xl bg-gray-200;
+}
+
+html::-webkit-scrollbar {
+  @apply w-[0.95rem];
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply rounded-lg border-[3px] border-solid border-transparent bg-[#606060] hover:bg-[#909090] bg-clip-content;
+}
+
+html::-webkit-scrollbar-track {
+  @apply bg-transparent;
 }
