@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Login } from '@/components/Login'
-import { getServerSession } from 'next-auth'
+import { getServerSession } from 'next-auth/next'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import React from 'react'
 import { Logged } from './Logged'

@@ -1,7 +1,8 @@
-import React from 'react'
 import './globals.css'
 import { Poppins as poppins } from 'next/font/google'
+import { QueryWrapper } from '@/app/QueryWrapper'
 import { Navbar } from '@/components/Navbar'
+import React from 'react'
 
 export const font = poppins({
   subsets: ['latin'],
@@ -22,8 +23,10 @@ export default function RootLayout ({
   return (
     <html lang='en'>
       <body className={font.className}>
-        <Navbar />
-        {children}
+        <QueryWrapper>
+          <Navbar />
+          {children}
+        </QueryWrapper>
       </body>
     </html>
   )
