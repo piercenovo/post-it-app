@@ -17,6 +17,7 @@ export const PostList: React.FC<PostListProps> = ({ posts }) => {
           avatar={post.user.image}
           postTitle={post.title}
           id={post.id}
+          comments={post.comments!}
         />
 
       ))}

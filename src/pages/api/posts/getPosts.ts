@@ -11,7 +11,8 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
   try {
     const posts = await prismadb.post.findMany({
       include: {
-        user: true
+        user: true,
+        comments: true
       },
       orderBy: {
         createdAt: 'desc'

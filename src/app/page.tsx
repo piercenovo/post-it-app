@@ -9,11 +9,10 @@ export default function Home () {
 
   if (error) return error
   if (isLoading) return <span>Loading...</span>
-  console.log(posts)
   return (
     <div>
       <AddPost />
-      <PostList posts={posts} />
+      <PostList posts={posts!} />
     </div>
   )
 }

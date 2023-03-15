@@ -16,11 +16,11 @@ model User {
   accounts      Account[]
   sessions      Session[]
   posts         Post[]
+  comments      Comment[]
 }
 
 model Account {
   id                String  @id @default(cuid())
-  userId            String
   type              String
   provider          String
   providerAccountId String
@@ -31,6 +31,7 @@ model Account {
   scope             String?
   id_token          String? @db.Text
   session_state     String?
+  userId            String
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -40,8 +41,8 @@ model Account {
 model Session {
   id           String   @id @default(cuid())
   sessionToken String   @unique
-  userId       String
   expires      DateTime
+  userId       String
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
@@ -55,12 +56,25 @@ model VerificationToken {
 }
 
 model Post {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
   title     String
-  published Boolean  @default(false)
+  published Boolean   @default(false)
+  comments  Comment[]
   useId     String
 
   user User @relation(fields: [useId], references: [id])
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  message   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  postId    String
+  userId    String
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id])
 }
