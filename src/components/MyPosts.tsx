@@ -7,13 +7,12 @@ export default function MyPosts () {
   const { data, isLoading } = useAuthPosts()
 
   if (isLoading) return <span>Posts are loading...</span>
-  console.log(data)
   return (
     <div>
       {data?.posts?.map(post => (
         <EditPost
           id={post.id}
-          key={data.image}
+          key={post.id}
           avatar={data.image}
           name={data.name}
           title={post.title}
