@@ -11,7 +11,16 @@ export interface PostType {
     createdAt: string
     postId: string
     userId: string
-  }
+  }[]
+}
+
+export interface AuthPostsType {
+  id: string
+  name: string
+  email: string
+  image: string
+  posts: PostType[]
 }
 
 export type ListOfPosts = PostType[]
+export type ListOfPostsByUser = AuthPostsType

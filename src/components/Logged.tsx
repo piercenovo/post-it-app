@@ -12,7 +12,7 @@ export function Logged ({ image } : LoggedProps) {
   return (
     <li className='flex gap-5 md:gap-6 items-center'>
       <button
-        onClick={() => signOut()}
+        onClick={() => signOut({ callbackUrl: '/' })}
         className='
         bg-gray-700
         text-white

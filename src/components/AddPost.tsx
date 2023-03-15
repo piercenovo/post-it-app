@@ -6,8 +6,8 @@ export default function AddPost () {
   const { isDisabled, title, handleChange, submitPost } = useCreatePost()
 
   return (
-    <form onSubmit={submitPost} className='bg-white my-8 p-8 rounded-md'>
-      <div className='flex flex-col my-4'>
+    <form onSubmit={submitPost} className='bg-white my-6 p-6 lg:my-8 lg:p-8 rounded-md'>
+      <div className='flex flex-col mb-4 mt-2'>
         <textarea
           onChange={handleChange}
           name='title'
@@ -16,7 +16,7 @@ export default function AddPost () {
           className='
             p-4
             rounded-md
-            my-2
+            mb-2
             bg-gray-200
             outline-sky-600
             transition
@@ -33,7 +33,7 @@ export default function AddPost () {
             text-sm
             bg-sky-600
             text-white
-            px-5 py-3
+            px-4 lg:px-5 py-3
             rounded-md
             disabled:opacity-25
             hover:bg-sky-700

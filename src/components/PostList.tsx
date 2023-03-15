@@ -1,13 +1,12 @@
 
 import React from 'react'
 import { Post } from '@/components/Post'
-import { type ListOfPosts } from '@/types'
+import { usePostList } from '@/hooks/usePostList'
 
-interface PostListProps {
-  posts: ListOfPosts,
-}
+export function PostList () {
+  const { posts, isLoading } = usePostList()
 
-export const PostList: React.FC<PostListProps> = ({ posts }) => {
+  if (isLoading) return <span>Loading...</span>
   return (
     <>
       {posts?.map(post => (
@@ -17,7 +16,7 @@ export const PostList: React.FC<PostListProps> = ({ posts }) => {
           avatar={post.user.image}
           postTitle={post.title}
           id={post.id}
-          comments={post.comments!}
+          comments={post.comments}
         />
 
       ))}

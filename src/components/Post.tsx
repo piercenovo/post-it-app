@@ -5,16 +5,20 @@ import Link from 'next/link'
 import React from 'react'
 
 interface PostProps {
-  id?: string,
+  id: string,
   avatar: string,
   postTitle: string,
   name: string,
-  comments?: any
+  comments?: {
+    id: string
+    postId: string
+    userId: string
+  }[]
 }
 
-export const Post: React.FC<PostProps> = ({ avatar, postTitle, name, id, comments }) => {
+export const Post: React.FC<PostProps> = ({ avatar, postTitle, name, comments, id }) => {
   return (
-    <div className='bg-white my-8 p-8 rounded-md'>
+    <div className='bg-white my-6 p-6 lg:my-8 lg:p-8 rounded-md'>
       <div className='flex items-center gap-2'>
         <Image
           className='rounded-full'
@@ -25,7 +29,7 @@ export const Post: React.FC<PostProps> = ({ avatar, postTitle, name, id, comment
         />
         <h3 className='font-bold text-gray-700'>{name}</h3>
       </div>
-      <div className='mt-8 mb-6'>
+      <div className='mt-6 mb-4 lg:mt-8 lg:mb-6'>
         <p className='break-all'>{postTitle}</p>
       </div>
       <div className='flex gap-4 cursor-pointer items-center'>
