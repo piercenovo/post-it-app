@@ -6,7 +6,7 @@ import { EditPost } from './EditPost'
 export default function MyPosts () {
   const { data, isLoading } = useAuthPosts()
 
-  if (isLoading) return <span>Posts are loading...</span>
+  if (isLoading) return <span className='text-center text-gray-600'>Posts are loading...</span>
   return (
     <div>
       {data?.posts?.map(post => (

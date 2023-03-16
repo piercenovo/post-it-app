@@ -22,7 +22,7 @@ export const EditPost: React.FC<EditPostProps> = ({ avatar, name, title, comment
     <>
       <div className='bg-white my-6 p-6 lg:my-8 lg:p-8 rounded-md'>
         <div className='flex items-center gap-2'>
-          <Image width={32} height={32} src={avatar} alt='avatar' className='rounded-full' />
+          <Image width={32} height={32} src={avatar} alt={`User avatar ${name}`} className='rounded-full' />
           <h3 className='font-bold text-gray-700'>{name}</h3>
         </div>
         <div className='my-6'>

@@ -11,6 +11,13 @@ export interface PostType {
     createdAt: string
     postId: string
     userId: string
+    message: string
+    user: {
+      email: string
+      id: string
+      image: string
+      name: string
+    }
   }[]
 }
 

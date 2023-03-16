@@ -3,10 +3,10 @@ import React from 'react'
 import { Post } from '@/components/Post'
 import { usePostList } from '@/hooks/usePostList'
 
-export function PostList () {
+export function CommentList () {
   const { posts, isLoading } = usePostList()
 
-  if (isLoading) return <span className='text-center text-gray-600'>Posts are loading...</span>
+  if (isLoading) return <span className='text-center text-gray-600'>Loading...</span>
   return (
     <>
       {posts?.map(post => (
