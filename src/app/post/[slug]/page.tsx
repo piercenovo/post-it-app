@@ -1,5 +1,6 @@
 'use client'
 
+import AddComment from '@/components/AddComment'
 import { Post } from '@/components/Post'
 import { usePostDetail } from '@/hooks/usePostDetail'
 
@@ -22,7 +23,9 @@ export default function PostDetail (url: URL) {
         name={data?.user.name!}
         avatar={data?.user.image!}
         postTitle={data?.title!}
+        comments={data?.comments}
       />
+      <AddComment id={data?.id} />
     </div>
   )
 }
