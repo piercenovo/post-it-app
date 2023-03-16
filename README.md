@@ -46,7 +46,7 @@
 
 ###### To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com/) installed on your computer).
 
-1. Fork this repository and clone the project
+1. Clone this repository
 
 ###### Please give me proper credit by linking back to [www.piercenovo.dev](https://www.piercenovo.dev/).
 
