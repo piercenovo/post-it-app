@@ -16,7 +16,7 @@ type URL = {
 export default function PostDetail (url: URL) {
   const { data, isLoading } = usePostDetail(url)
 
-  if (isLoading) return <span className='text-center text-gray-600'>Loading post...</span>
+  if (isLoading) return <span className='text-center text-gray-600'>Cargando post...</span>
 
   return (
     <div>

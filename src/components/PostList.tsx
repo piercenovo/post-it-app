@@ -6,7 +6,7 @@ import { usePostList } from '@/hooks/usePostList'
 export function PostList () {
   const { posts, isLoading } = usePostList()
 
-  if (isLoading) return <span className='text-center text-gray-600'>Posts are loading...</span>
+  if (isLoading) return <span className='text-center text-gray-600'>Cargando los posts...</span>
   return (
     <>
       {posts?.map(post => (

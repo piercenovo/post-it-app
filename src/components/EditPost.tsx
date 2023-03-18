@@ -30,13 +30,13 @@ export const EditPost: React.FC<EditPostProps> = ({ avatar, name, title, comment
         </div>
         <div className='flex items-center gap-4'>
           <p className='text-sm font-bold text-gray-700'>
-            {comments?.length} Comments
+            {comments?.length} Comentarios
           </p>
           <button
             onClick={handleClick}
             className='text-sm font-bold text-red-500'
           >
-            Delete
+            Eliminar
           </button>
         </div>
       </div>

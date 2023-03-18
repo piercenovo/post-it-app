@@ -21,7 +21,7 @@ export function Logged ({ image } : LoggedProps) {
         rounded-md
       '
       >
-        Sign out
+        Cerrar Sessión
       </button>
       <Link href='/dashboard'>
         <Image

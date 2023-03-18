@@ -6,7 +6,7 @@ import { usePostList } from '@/hooks/usePostList'
 export function CommentList () {
   const { posts, isLoading } = usePostList()
 
-  if (isLoading) return <span className='text-center text-gray-600'>Loading...</span>
+  if (isLoading) return <span className='text-center text-gray-600'>Cargando...</span>
   return (
     <>
       {posts?.map(post => (

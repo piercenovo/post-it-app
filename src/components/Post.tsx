@@ -35,7 +35,7 @@ export const Post: React.FC<PostProps> = ({ avatar, postTitle, name, comments, i
       <div className='flex gap-4 cursor-pointer items-center'>
         <Link href={`/post/${id}`}>
           <p className='text-sm font-bold text-gray-700'>
-            {comments?.length} Comments
+            {comments?.length} Comentarios
           </p>
         </Link>
       </div>

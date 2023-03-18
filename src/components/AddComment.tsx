@@ -9,7 +9,7 @@ export default function AddComment ({ id }: PostProps) {
 
   return (
     <form onSubmit={submitComment} className='my-8'>
-      <h3>Add a comment</h3>
+      <h3>Agregar un comentario</h3>
       <div className='flex flex-col my-2'>
         <input
           onChange={handleChange}
@@ -34,7 +34,7 @@ export default function AddComment ({ id }: PostProps) {
           '
           type='submit'
         >
-          Add comment 🚀
+          Agregar comentario 🚀
         </button>
         <p
           className={

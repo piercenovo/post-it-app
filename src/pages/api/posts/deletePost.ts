@@ -10,7 +10,7 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
   }
 
   const session = await getServerSession(req, res, authOptions)
-  if (!session) return res.status(401).json({ message: 'Please sign in' })
+  if (!session) return res.status(401).json({ message: 'Por favor inicia sesión' })
 
   // Delete a Post
   try {

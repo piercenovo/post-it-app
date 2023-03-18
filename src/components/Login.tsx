@@ -16,7 +16,7 @@ export function Login () {
           disabled:opacity-25
         '
       >
-        Sign In
+        Iniciar Sesión
       </button>
     </li>
   )

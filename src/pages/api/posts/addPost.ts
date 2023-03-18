@@ -14,7 +14,7 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
   if (!session) {
     return res
       .status(401)
-      .json({ message: 'Please signin to create a post.' })
+      .json({ message: 'Inicia sesión para crear un post.' })
   }
 
   const { title } = req.body
@@ -23,10 +23,10 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
 
   // Check title
   if (maxLengthTitle) {
-    return res.status(403).json({ message: 'Please write a shorter post' })
+    return res.status(403).json({ message: 'Por favor escribe un post más corta' })
   }
   if (minLengthTitle) {
-    return res.status(403).json({ message: 'Please do not leave this empty' })
+    return res.status(403).json({ message: 'Por favor no dejes esto vacío' })
   }
 
   // Create Post

@@ -28,7 +28,7 @@ export function useCreatePost () {
       },
       onSuccess: (data) => {
         queryClient.invalidateQueries(['posts'])
-        toast.success('Post has been made 🔥', { id: toastPostID })
+        toast.success('Se ha hecho el post 🔥', { id: toastPostID })
         setTitle('')
         setIsDisabled(false)
       }
@@ -37,7 +37,7 @@ export function useCreatePost () {
   const submitPost = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsDisabled(true)
-    toastPostID = toast.loading('Creating your post', { id: toastPostID })
+    toastPostID = toast.loading('Subiendo post', { id: toastPostID })
     mutate(title)
   }
 

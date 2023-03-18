@@ -18,17 +18,17 @@ export function useEditPost ({ id }: props) {
     {
       onError: (error) => {
         console.log(error)
-        toast.error('Error deleting that post', { id: deleteToastID })
+        toast.error('Error al eliminar el post', { id: deleteToastID })
       },
       onSuccess: (data) => {
-        toast.success('Post has been deleted.', { id: deleteToastID })
+        toast.success('El post ha sido eliminado.', { id: deleteToastID })
         queryClient.invalidateQueries(['auth-posts'])
       }
     }
   )
 
   const deletePost = () => {
-    deleteToastID = toast.loading('Deleting your post.', { id: deleteToastID })
+    deleteToastID = toast.loading('Eliminando post.', { id: deleteToastID })
     mutate(id)
   }
 

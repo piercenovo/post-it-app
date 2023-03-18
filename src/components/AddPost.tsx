@@ -12,7 +12,7 @@ export default function AddPost () {
           onChange={handleChange}
           name='title'
           value={title}
-          placeholder="What's on your mind?"
+          placeholder='¿Qué tienes en mente?'
           className='
             p-4
             rounded-md
@@ -41,7 +41,7 @@ export default function AddPost () {
           '
           type='submit'
         >
-          Create a post
+          Crear un post
         </button>
       </div>
     </form>

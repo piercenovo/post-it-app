@@ -28,16 +28,16 @@ export default function Toggle ({ deletePost, setToggle } : ToogleProps) {
       '
       >
         <h2 className='text-base'>
-          Are you sure you want to delete this post? 😥
+          ¿Seguro que quieres eliminar este post? 😥
         </h2>
         <h3 className='text-sm text-red-600'>
-          Pressing the delete button will permenantly delete your post
+          Al presionar el botón Eliminar, se eliminará su post permanentemente.
         </h3>
         <button
           onClick={deletePost}
           className='bg-red-600 text-sm text-white py-2 px-4 rounded-md'
         >
-          Delete Post
+          Eliminar post
         </button>
       </div>
     </div>

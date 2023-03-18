@@ -37,7 +37,7 @@ export function useCreateComment ({ id }: PostProps) {
       },
       onSuccess: (data) => {
         queryClient.invalidateQueries(['detail-post'])
-        toast.success('Added your comment', { id: toastCommentID })
+        toast.success('Comentario agregado', { id: toastCommentID })
         setTitle('')
         setIsDisabled(false)
       }
@@ -46,7 +46,7 @@ export function useCreateComment ({ id }: PostProps) {
   const submitComment = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsDisabled(true)
-    toastCommentID = toast.loading('Adding your comment', { id: toastCommentID })
+    toastCommentID = toast.loading('Agregando tu comentario', { id: toastCommentID })
     mutate({ title, postId: id })
   }
 

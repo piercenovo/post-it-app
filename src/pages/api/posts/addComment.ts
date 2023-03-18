@@ -14,7 +14,7 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
   if (!session) {
     return res
       .status(401)
-      .json({ message: 'Please signin to create a post.' })
+      .json({ message: 'Inicia sesión para crear un post.' })
   }
 
   const { title, postId } = req.body.data
@@ -22,7 +22,7 @@ export default async function handler (req: NextApiRequest, res: NextApiResponse
 
   // Check title
   if (minLengthTitle) {
-    return res.status(403).json({ message: 'Please enter something' })
+    return res.status(403).json({ message: 'Por favor ingresa algo.' })
   }
 
   // Create Comment
