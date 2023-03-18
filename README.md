@@ -1,38 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- POSTIT APP -->
+  <h1 align="center" style="font-size: 50px"> PostIt App 📬</h1>
+  <p align="center">
+  A PosIt App, built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted with <a      href="https://vercel.com/" target="_blank">Vercel</a>
+  </p>
+ <p align="center">
+  <img alt="Stars" src="https://badgen.net/github/stars/piercenovo/post-it-app">
+  <img alt="Commits" src="https://badgen.net/github/commits/piercenovo/post-it-app/main">
+ </p>
 
-## Getting Started
+[![PostIt App](https://raw.githubusercontent.com/piercenovo/post-it-app/main/public/postit-screen.png)](https://postit.piercenovo.dev)
 
-First, run the development server:
+<!-- BUILT WITH -->
+## 🛠 Built With
+
+* <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white" alt="Next.js">
+</a>
+
+* <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" alt="TypeScript">
+</a>
+
+* <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=TailwindCSS&logoColor=white" alt="TailwindCSS">
+</a>
+
+* <a href="https://www.prisma.io/" target="_blank"><img src="https://img.shields.io/badge/prisma-1A202C?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma">
+</a>
+
+* <a href="https://www.postgresql.org/" target="_blank"><img src="https://img.shields.io/badge/postgresql-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</a>
+
+<!-- FEATURES -->
+## 📌 Features:
+
+- Environment, Typescript, NextJS Setup
+- Prisma & PostgreSQL connect, Database creation
+- Authentication with NextAuth & Google Login
+- Cookie based authentication
+- API and Controllers creation
+- Detail-oriented effects using TailwindCSS
+- React Query data fetching
+- Full responsiveness on all pages
+
+
+<!-- HOW TO USE -->
+## 🚀 How To Use
+
+###### To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com/) installed on your computer).
+
+1. Clone this repository
+
+###### Please give me proper credit by linking back to [www.piercenovo.dev](https://www.piercenovo.dev/).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/piercenovo/post-it-app.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd post-it-app
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Start the server
 
-## Learn More
+```bash
+  yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+<!-- SETUP .ENV FILE -->
+## 📚 Setup .env File
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+DATABASE_URL=
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
 
-## Deploy on Vercel
+<!-- CONTACT -->
+## 📬 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Website - [www.piercenovo.dev](https://www.piercenovo.dev)
+- Github - [@piercenovo](https://github.com/piercenovo)
+- LinkedIn - [@piercenovoa](https://www.linkedin.com/in/piercenovoa/)
+- Twitter - [@piercenovodev](https://twitter.com/piercenovodev)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- SHOW YOUR SUPPORT -->
+## 🫶🏻 Show Your Support
+
+Give a ⭐️ if you liked this project!
